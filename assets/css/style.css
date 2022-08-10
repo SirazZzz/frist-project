@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:lightgrey;
+    
+}
+.calender-title{
+    display: flex;
+    justify-content: center;
+}
+.calender-title h1{
+    font-size: 64px;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #c0392b;
+}
+.calender{
+    width: 90%;
+    margin: auto;
+}
+.calender ul{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+    padding: 0;
+}
+.calender ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 4em;
+    height: 125px;
+    background-color: #95a5a6;
+}
+
+.calender ul .previous-month{
+    background-color: #e74c3c;
+}
+.calender ul .next-month{
+    background-color: #c0392b;
+}
+
+/* responsive css  */
+
+@media (max-width: 900px){
+    .calender-title h1{
+        font-size: 58px;
+        font-weight: 700;
+    }
+
+    .calender ul{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (max-width: 1000px){
+    .calender-title h1{
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .calender ul{
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+@media (max-width: 900px){
+    .calender ul{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+@media (max-width: 800px){
+    .calender ul{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (max-width: 700px){
+    .calender ul{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 600px){
+    .calender ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
